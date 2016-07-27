@@ -1,0 +1,113 @@
+:root {
+  --themeColor: #EF5350;
+}
+
+.credit {
+  text-align: center;
+}
+.credit p {
+  font-size: 14px;
+  font-weight: 600;
+}
+blockquote {
+
+  border-left: 10px solid var(--themeColor);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: var(--themeColor);
+  content: open-quote;
+  font-size: 9em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+    color: var(--themeColor);
+}
+
+#quoteContainer {
+  background: #FFF;
+
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.lead {
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#tweet-quote {
+
+margin-top: 200px;
+color: #fff;
+margin-left: 10px;
+margin-bottom: 5px;
+
+}
+
+#tweet-quote:hover {
+  color:black;
+}
+
+#quote-author p {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+
+}
+
+#inputContainer{
+
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 15px
+}
+#quote-author {
+  margin-top: 5px;
+  text-align: right;
+  margin-right: 60px;
+  color: var(--themeColor);
+}
+#quoteButton {
+background-color: white;
+color: var(--themeColor);
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+border: 0px;
+
+margin-bottom: 0px;
+height: 45px;
+margin-top: 197px;
+margin-left: 15px;
+
+}
+#quoteButton:hover {
+  color:black;
+
+}
+
+
+
+body {
+  background-color: var(--themeColor);
+}
+
+button,
+button:active,
+button:focus,
+button:hover,
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover{
+    outline:none !important;
+}

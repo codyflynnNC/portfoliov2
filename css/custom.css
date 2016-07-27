@@ -1,0 +1,83 @@
+/* ===== == = === Base Styles === = == ===== */
+/**Default Body Styles***/
+body {
+  font-size: 99%;
+}
+
+/***Main Jumbotron***/
+.hero-unit {
+background: url("../resources/computer-coding.jpg");
+background-position: center;
+background-size: cover;
+height: 100vh;
+position: relative;
+}
+
+.hero-unit-text {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero-unit-text h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+#downArrow {
+  position: absolute;
+  height: 10vh;
+  top:89%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ===== == = === End Base Styles === = == ===== */
+
+     /* ===== == = === 20em (320px) === = == ===== */
+
+     @media only screen and (min-width : 20em) {
+       .hero-unit-text h1 {
+       font-size: 5em;
+      }
+     }
+
+     /* ===== == = === 30em (480px) === = == ===== */
+
+     @media only screen and (min-width : 30em) {
+       .hero-unit-text h1 {
+          font-size: 7em;
+         }
+     }
+
+     /* ===== == = === 37.5em (600px) === = == ===== */
+
+     @media only screen and (min-width: 37.5em) {
+
+     }
+
+     /* ===== == = === 48em (768px) === = == ===== */
+
+     @media only screen and (min-width : 48em) {
+       .hero-unit-text h1 {
+          font-size: 11em;
+         }
+     }
+
+     /* ===== == = === 56.25em (900px) === = == ===== */
+
+     @media only screen and (min-width : 56.25em) {
+     }
+
+     /* ===== == = === 68.75em (1100px) === = == ===== */
+
+     @media only screen and (min-width : 68.75em) {
+     }
+
+     /* ===== == = === 81.25em (1300px) === = == ===== */
+
+     @media only screen and (min-width : 81.25em) {
