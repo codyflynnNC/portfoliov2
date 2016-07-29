@@ -3,7 +3,35 @@
 body {
   font-size: 99%;
 }
+/***Navbar***/
+.nav li a {
+  font-size: 1.5em;
+}
+#navbarBrand {
+  margin-right: 10px;
+}
+.navbar-toggle {
+    margin-right: 0px;
+    left: 15px;
+}
+button.navbar-toggle {
+  border: none;
+}
+#navbarBrand > button:hover {
+    background-color: none;
+}
+#navbarBrand > button > span:focus, #navbarBrand > button > span:hover {
+    background-color: none;
+}
 
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: none;
+}
+.glyphicon.glyphicon-menu-hamburger {
+  color:white;
+  font-size:15px;
+
+}
 /***Main Jumbotron***/
 .hero-unit {
 background: url("../resources/computer-coding.jpg");
@@ -38,13 +66,27 @@ position: relative;
 
 /* ===== == = === End Base Styles === = == ===== */
 
+   /* ===== == = === 15em (???px) === = == ===== */
+
+  @media only screen and (min-width : 15em) {
+    .hero-unit-text h1 {
+      font-size: 5em;
+    }
+    #socialNav {
+      display: none;
+    }
+    li.social.pull-right {
+      display:none;
+    }
+  }
+
      /* ===== == = === 20em (320px) === = == ===== */
 
      @media only screen and (min-width : 20em) {
        .hero-unit-text h1 {
        font-size: 5em;
       }
-     }
+  }
 
      /* ===== == = === 30em (480px) === = == ===== */
 
@@ -58,26 +100,91 @@ position: relative;
 
      @media only screen and (min-width: 37.5em) {
 
+
      }
 
-     /* ===== == = === 48em (768px) === = == ===== */
+     /* ===== == = === 48em (768px) === = == ===== Navbar collapse point */
 
      @media only screen and (min-width : 48em) {
+       #navNav {
+         float:none;
+         margin:0 auto;
+         display: block;
+         text-align: center;
+       }
+       li.social.pull-right {
+         display:inline-block;
+       }
        .hero-unit-text h1 {
           font-size: 11em;
+         }
+         #socialNav {
+           display: block;
+         }
+         #navMain {
+           margin-left: 0%;
+         }
+         .nav li  {
+           display: inline-block;
+           float:none;
          }
      }
 
      /* ===== == = === 56.25em (900px) === = == ===== */
 
      @media only screen and (min-width : 56.25em) {
+       #navNav {
+         float:none;
+         margin:0 auto;
+         display: block;
+         text-align: center;
+       }
+       .nav li a {
+         padding-right: 20px;
+         padding-left: 20px;
+       }
+       #navMain {
+         margin-left: 0%;
+       }
+       .nav li  {
+         display: inline-block;
+         float:none;
+       }
      }
 
      /* ===== == = === 68.75em (1100px) === = == ===== */
 
      @media only screen and (min-width : 68.75em) {
+       #navNav {
+         float:none;
+         margin:0 auto;
+         display: block;
+         text-align: center;
+       }
+       .nav li a {
+         padding-right: 30px;
+         padding-left: 30px;
+       }
+       .nav li  {
+         display: inline-block;
+         float:none;
+       }
      }
 
      /* ===== == = === 81.25em (1300px) === = == ===== */
 
      @media only screen and (min-width : 81.25em) {
+       #navNav {
+         float:none;
+         margin:0 auto;
+         display: block;
+         text-align: center;
+       }
+       .nav li  {
+         display: inline-block;
+         float:none;
+       }
+       #navMain {
+         margin-left: 0%;
+       }
+     }
